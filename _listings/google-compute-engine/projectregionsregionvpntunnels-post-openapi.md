@@ -1,9 +1,11 @@
+---
 swagger: "2.0"
 x-collection-name: Google Compute Engine
-x-complete: 1
+x-complete: 0
 info:
-  title: Compute Engine
-  description: creates-and-runs-virtual-machines-on-google-cloud-platform-
+  title: Google Compute Engine API Create VPN Tunnel
+  description: Creates a VpnTunnel resource in the specified project and region using
+    the data included in the request.
   contact:
     name: Google
     url: https://google.com
@@ -99,45 +101,17 @@ paths:
           description: OK
       tags:
       - VPN Tunnel
-  /{project}/regions/{region}/vpnTunnels/{vpnTunnel}:
-    delete:
-      summary: Delete VPN Tunnel
-      description: Deletes the specified VpnTunnel resource.
-      operationId: compute.vpnTunnels.delete
-      x-api-path-slug: projectregionsregionvpntunnelsvpntunnel-delete
-      parameters:
-      - in: path
-        name: project
-        description: Project ID for this request
-      - in: path
-        name: region
-        description: Name of the region for this request
-      - in: path
-        name: vpnTunnel
-        description: Name of the VpnTunnel resource to delete
-      responses:
-        200:
-          description: OK
-      tags:
-      - VPN Tunnel
-    get:
-      summary: Get VPN Tunnel
-      description: Returns the specified VpnTunnel resource. Get a list of available
-        VPN tunnels by making a list() request.
-      operationId: compute.vpnTunnels.get
-      x-api-path-slug: projectregionsregionvpntunnelsvpntunnel-get
-      parameters:
-      - in: path
-        name: project
-        description: Project ID for this request
-      - in: path
-        name: region
-        description: Name of the region for this request
-      - in: path
-        name: vpnTunnel
-        description: Name of the VpnTunnel resource to return
-      responses:
-        200:
-          description: OK
-      tags:
-      - VPN Tunnel
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---
